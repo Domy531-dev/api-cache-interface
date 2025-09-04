@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API REST com Cache</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    input, button { padding: 0.5rem; margin: 0.5rem 0; }
+    #result { margin-top: 1rem; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <h1>Testar API REST com Cache</h1>
+
+  <label>Chave:</label>
+  <input type="text" id="key" />
+  <br>
+
+  <label>Valor (para POST):</label>
+  <input type="text" id="value" />
+  <br>
+
+  <button onclick="getData()">GET /api/data/:key</button>
+  <button onclick="postData()">POST /api/data/:key</button>
+  <button onclick="showCache()">Listar Cache</button>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
